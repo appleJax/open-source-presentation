@@ -1,0 +1,159 @@
+import { Appear } from "@mdx-deck/components";
+import { big } from "@mdx-deck/themes";
+import theme from "./theme";
+import GitHubLogo from "./images/github.svg";
+import kevin from "./images/kevin.jpg";
+import Link from "./components/Link";
+import List from "./components/List";
+import Img from "./components/Img";
+
+export const themes = [big, theme];
+
+# Open Source
+
+<img alt="github logo" width="100" src={GitHubLogo} />
+
+---
+
+import { Head } from "mdx-deck";
+import StallmanQuote from "./components/StallmanQuote";
+
+<Head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Chelsea+Market&display=swap"
+    rel="stylesheet"
+  />
+</Head>
+<StallmanQuote />
+
+---
+
+<img
+  alt="kevin photo"
+  src={kevin}
+  style={{
+    borderRadius: "50%",
+    boxShadow: "5px 5px 10px rgba(0,0,0,0.3)",
+    height: "300px"
+  }}
+/>
+
+### Kevin Brewer
+
+### Full-stack Software Engineer
+
+### @ Walmart Labs
+
+#### <Link style={{ fontFamily: 'inherit' }} to="applejax.github.io" />
+
+---
+
+# GitHub Workflow
+
+<ul>
+  <Appear>
+    <li>
+      Fork a project <Img src="images/fork.png" />
+    </li>
+    <li>
+      Clone your Fork <Img src="images/clone.png" />
+    </li>
+    <li>
+      Create a Branch <Img src="images/branch.png" />
+    </li>
+    <li>
+      Git Add / Commit <Img src="images/addCommit.png" />
+    </li>
+    <li>
+      Push to your Fork <Img src="images/push.png" />
+    </li>
+    <li>
+      Open a Pull Request <Img src="images/pr.png" />
+    </li>
+  </Appear>
+</ul>
+
+---
+
+![Git repos image](images/repos.png)
+
+---
+
+# Git Branching Workflow
+
+![Git workflow image](images/gitflow.png)
+
+---
+
+# Famous OS Projects
+
+<ul>
+  <Appear>
+    <li>VS Code</li>
+    <li>TensorFlow</li>
+    <li>React.js</li>
+    <li>Ruby On Rails</li>
+    <div>
+      <p
+        style={{
+          display: "inline-block",
+          fontSize: "5rem",
+          margin: "0 50px 0 0"
+        }}
+      >
+        😍
+      </p>
+      Great for learning / research
+    </div>
+    <div>
+      <p
+        style={{
+          display: "inline-block",
+          fontSize: "5rem",
+          margin: "0 50px 0 0"
+        }}
+      >
+        😔
+      </p>
+      Not great for first contributions
+    </div>
+  </Appear>
+</ul>
+
+---
+
+### Smaller,
+
+### local projects
+
+### are better for getting started
+
+---
+
+# First Projects
+
+<List>
+  <Link to="github.com/trekhleb/javascript-algorithms" />
+  <Link to="www.agileventures.org" />
+  <Link to="github.com/san-diego-tech-hub" />
+  <Link to="github.com/opensandiego" />
+  <Link to="github.com/sandiegojs" />
+</List>
+
+---
+
+# Coming up to Speed <div style={{ transform: "rotateY(180deg)" }}>🏎💨</div>
+
+<List>
+  <Link to="egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github" />
+  <Link to="learngitbranching.js.org/?locale=en_US" />
+  <Link to="code.energy/open-source-contributing" />
+  <Link to="github.github.com/training-kit/downloads/github-git-cheat-sheet" />
+  <Link to="lab.github.com" />
+</List>
+
+---
+
+# 😎 Thanks!
+
+<Link to="github.com/applejax/open-source-presentation" />
